@@ -49,6 +49,22 @@ body {
     text-align: center;
 }
 
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 20%;
+    border: 3px solid var(--border-color);
+    margin-bottom: 24px;
+    transition: all var(--transition);
+}
+
+.profile-photo:hover {
+    border-color: var(--border-hover);
+    transform: scale(1.05);
+}
+
 .hero-section h1 {
     font-size: 4rem;
     font-weight: 700;
@@ -454,6 +470,12 @@ body {
 
     .hero-section {
         padding: 60px 0 50px;
+    }
+
+    .profile-photo {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
     }
 
     .hero-section h1 {
