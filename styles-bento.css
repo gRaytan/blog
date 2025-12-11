@@ -170,8 +170,7 @@ body {
 
 .tile-twist .tile-logo {
     height: 38px;
-    filter: none;
-    mix-blend-mode: screen; /* Blends white bg into dark background */
+    filter: none; /* Transparent background, show original colors */
 }
 
 /* Tile Typography */
@@ -459,6 +458,11 @@ body {
 
     .hero-section h1 {
         font-size: 2.5rem;
+        background: none;
+        -webkit-background-clip: unset;
+        -webkit-text-fill-color: #ffffff;
+        background-clip: unset;
+        color: #ffffff;
     }
 
     .hero-section .tagline {
@@ -482,6 +486,17 @@ body {
 
     .section-title {
         font-size: 1.25rem;
+    }
+
+    /* Make logos visible on mobile */
+    .tile-logo {
+        height: 32px;
+        filter: brightness(0) invert(1);
+        opacity: 1;
+    }
+
+    .tile-twist .tile-logo {
+        filter: none; /* Keep original colors on mobile too */
     }
 }
 
