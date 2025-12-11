@@ -17,8 +17,8 @@ Visit the live site at: `https://graytan.github.io/blog/`
 ## 🛠️ Tech Stack
 
 - **HTML5**: Semantic markup
-- **CSS3**: Modern styling with CSS Grid and Flexbox
-- **Vanilla JavaScript**: Smooth scrolling and animations
+- **CSS3**: Modern bento-style dashboard layout with CSS Grid
+- **Vanilla JavaScript**: Interactive elements
 - **Google Fonts**: Inter font family
 - **GitHub Pages**: Free hosting
 
@@ -57,28 +57,31 @@ GitHub Pages typically takes 1-2 minutes to deploy. You'll see a green checkmark
 
 ## 🎨 Customization
 
-### Adding More Products
+### Adding More Career Tiles
 
-Edit `index.html` and add more product cards in the Products section:
+Edit `index.html` and add more tiles in the Career section:
 
 ```html
-<div class="product-card">
-    <h3>Your Product Name</h3>
-    <p>Product description here.</p>
-    <a href="https://yourproduct.com" target="_blank" class="product-link">Visit Site →</a>
+<div class="bento-tile tile-company">
+    <img src="logo-url.svg" alt="Company" class="tile-logo">
+    <h3>Company Name</h3>
+    <p class="role">Your Role</p>
+    <p class="period">2020 - 2023</p>
+    <p class="details">Description of your work.</p>
 </div>
 ```
 
-### Adding More Articles
+### Adding More Writing Posts
 
-Add more article cards in the Writing section:
+Add more post tiles in the Writing section:
 
 ```html
-<article class="article-card">
-    <h3>Article Title</h3>
-    <p>Article description...</p>
-    <a href="https://your-article-link" target="_blank" class="article-link">Read More →</a>
-</article>
+<div class="bento-tile tile-post">
+    <span class="post-tag">Category</span>
+    <h3>Post Title</h3>
+    <p class="details">Post description...</p>
+    <a href="https://your-post-link" target="_blank" class="tile-link">Read More →</a>
+</div>
 ```
 
 ### Changing Colors
@@ -87,8 +90,8 @@ Edit the CSS variables in `styles.css`:
 
 ```css
 :root {
-    --primary-color: #2563eb;    /* Change to your preferred color */
-    --secondary-color: #1e40af;
+    --bg-dark: #0a0a0a;
+    --accent-blue: #3b82f6;
     /* ... other colors */
 }
 ```
@@ -111,18 +114,17 @@ Then visit `http://localhost:8000`
 
 ## 📝 Content Updates
 
-- **Bio**: Edit the About section in `index.html`
-- **Products**: Add/edit product cards in the Products section
-- **Writing**: Add/edit articles in the Writing section
-- **Contact**: Update social links in the Contact section
+- **Hero**: Edit name, tagline, and intro in the hero section
+- **Career**: Add/edit career tiles with company logos and details
+- **Writing**: Add/edit writing post tiles
+- **Projects**: Add/edit project and contact tiles
 
 ## 🔧 Future Enhancements
 
-- [ ] Add blog integration
-- [ ] Add podcast section with episodes
-- [ ] Add press mentions
-- [ ] Add dark mode toggle
-- [ ] Add contact form
+- [ ] Add more writing posts
+- [ ] Add podcast section
+- [ ] Add press mentions section
+- [ ] Add project showcase with images
 - [ ] Add analytics
 
 ## 📄 License
