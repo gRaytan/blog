@@ -495,8 +495,10 @@ body {
         opacity: 1;
     }
 
-    .tile-twist .tile-logo {
-        filter: none; /* Keep original colors on mobile too */
+    .tile-twist .tile-logo,
+    .tile-remitly .tile-logo,
+    .tile-meta .tile-logo {
+        filter: none; /* Keep original colors on mobile */
     }
 }
 
