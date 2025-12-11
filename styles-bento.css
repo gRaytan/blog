@@ -143,6 +143,36 @@ body {
     margin-bottom: 16px;
 }
 
+/* Tile Logo (company logos) */
+.tile-logo {
+    height: 40px;
+    width: auto;
+    max-width: 120px;
+    margin-bottom: 16px;
+    object-fit: contain;
+    filter: brightness(0) invert(1); /* Makes logos white for dark background */
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.bento-tile:hover .tile-logo {
+    opacity: 1;
+}
+
+/* Specific logo adjustments */
+.tile-remitly .tile-logo {
+    height: 36px;
+}
+
+.tile-meta .tile-logo {
+    height: 32px;
+}
+
+.tile-twist .tile-logo {
+    height: 38px;
+    filter: brightness(0) invert(1); /* White logo on dark bg */
+}
+
 /* Tile Typography */
 .bento-tile h1 {
     font-size: 3rem;
