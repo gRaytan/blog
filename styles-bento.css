@@ -287,9 +287,22 @@ body {
     box-shadow: 0 20px 40px rgba(139, 92, 246, 0.15);
 }
 
+/* Remitly Tile */
+.tile-remitly {
+    background: linear-gradient(135deg, var(--bg-tile) 0%, #0a1a0a 100%);
+}
+
+.tile-remitly:hover {
+    border-color: var(--accent-green);
+    box-shadow: 0 20px 40px rgba(16, 185, 129, 0.15);
+}
+
+.tile-remitly .role {
+    color: var(--accent-green);
+}
+
 /* Meta Tile */
 .tile-meta {
-    grid-column: span 1;
     background: linear-gradient(135deg, var(--bg-tile) 0%, #0a1628 100%);
 }
 
