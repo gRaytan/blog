@@ -440,6 +440,36 @@ body {
     box-shadow: 0 20px 40px rgba(245, 158, 11, 0.15);
 }
 
+/* AI Consulting Tile */
+.tile-ai-consulting {
+    grid-column: span 1;
+    background: linear-gradient(135deg, var(--bg-tile) 0%, #0a0a1a 100%);
+}
+
+.tile-ai-consulting:hover {
+    border-color: var(--accent-cyan);
+    box-shadow: 0 20px 40px rgba(6, 182, 212, 0.2);
+}
+
+.tile-ai-consulting .tile-link {
+    color: var(--accent-cyan);
+}
+
+/* Trading Tile */
+.tile-trading {
+    grid-column: span 1;
+    background: linear-gradient(135deg, var(--bg-tile) 0%, #0a1a0a 100%);
+}
+
+.tile-trading:hover {
+    border-color: var(--accent-green);
+    box-shadow: 0 20px 40px rgba(16, 185, 129, 0.2);
+}
+
+.tile-trading .tile-link {
+    color: var(--accent-green);
+}
+
 /* Footer */
 .footer {
     text-align: center;
