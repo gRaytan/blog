@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://graytan.github.io/blog/sitemap.xml
+
